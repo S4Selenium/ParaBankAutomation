@@ -1,0 +1,15 @@
+
+  {
+    "FirstName": "Test",
+    "LastName": "User1",
+    "Address": "Emille Strabe 23",
+    "City": "Dortmund",
+    "State": "Dortmund",
+    "ZipCode": "4422",
+    "Phone":"123456",
+    "SSN": "123456",
+    "Password": "admin123",
+    "ConfirmPassword": "admin123",
+    "Amount":"50"
+    
+  }

@@ -5,41 +5,43 @@ This project automates the testing of the [ParaBank](https://parabank.parasoft.c
 ---
 
 ## 📁 Project Structure
-
+QAAutomationFabricGroup/
 │
 ├── tests/
-│ ├── APITest.spec.ts # API test using session-based auth
+│ └── APITest.spec.ts # API test using session-based auth
 │
-├── pages/
-| ├── HomePage.page.ts # Page Object Model for Home Page 
-│ ├── BillPaymentPage.page.ts # Page Object Model for Bill Payment
-│ ├── LoginPage.page.ts # Page Object Model for Login Page 
-| ├── Registration.page.ts # Page Object Model for Register Page 
-│ ├── NewAccountOPening.page.ts # Page Object Model for AccountOpening
-│ ├── TransferFund.page.ts # Page Object Model for Transfering funds ....
+├── pages/ # Page Object Models (POM)
+│ ├── HomePage.page.ts # Home Page
+│ ├── LoginPage.page.ts # Login Page
+│ ├── Registration.page.ts # Register Page
+│ ├── NewAccountOpening.page.ts # Account Opening Page
+│ ├── TransferFund.page.ts # Transfer Funds Page
+│ ├── BillPaymentPage.page.ts # Bill Payment Page
 │
 ├── Utils/
-│ ├── BankDetails.ts # Utilities to store/retrieve usernames and account numbers
-│ ├── TestData.json # Static test data used across flows
+│ ├── BankDetails.ts # Store/retrieve usernames and account numbers
+│ └── TestData.json # Static test data
 │
 ├── username-data.json # Stores registered username
 ├── account-data.json # Stores new account number
 ├── playwright.config.ts # Playwright configuration
-└── README.md
+└── README.md # Project documentation
+
+
 
 
 ---
 
-## ✅ Features Covered
+## Features Covered
 
-### ✅ UI Test Automation
+###UI Test Automation
 
 - Login
 - Registration
 - Account Opening
 - Bill Payment (with dynamic account number)
 
-### ✅ API Testing (GET Transactions by Amount)
+### API Testing (GET Transactions by Amount)
 
 - Dynamically fetch account number from `account-data.json`
 - Perform login via UI to simulate a real session
@@ -48,7 +50,7 @@ This project automates the testing of the [ParaBank](https://parabank.parasoft.c
 
 ---
 
-## 🔑 Authentication Strategy
+## Authentication Strategy
 
 Since ParaBank requires a browser session to access transaction endpoints:
 
@@ -59,7 +61,7 @@ Since ParaBank requires a browser session to access transaction endpoints:
 
 ---
 
-## 🧪 How to Run
+## How to Run
 
 1. **Install Dependencies**
 

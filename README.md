@@ -5,32 +5,30 @@ This project automates the testing of the [ParaBank](https://parabank.parasoft.c
 ---
 
 ## 📁 Project Structure
+
 QAAutomationFabricGroup/
 .
 ├── tests/
-│   └── APITest.spec.ts              # API test using session-based authentication
+│   └── APITest.spec.ts              
 │
-├── pages/                           # Page Object Models (POM) for UI interactions
-│   ├── HomePage.page.ts             # Home Page interactions
-│   ├── LoginPage.page.ts            # Login Page interactions
-│   ├── Registration.page.ts         # Registration Page interactions
-│   ├── NewAccountOpening.page.ts    # New Account Opening Page interactions
-│   ├── TransferFund.page.ts         # Transfer Funds Page interactions
-│   └── BillPaymentPage.page.ts      # Bill Payment Page interactions
+├── pages/                          
+│   ├── HomePage.page.ts            
+│   ├── LoginPage.page.ts            
+│   ├── Registration.page.ts         
+│   ├── NewAccountOpening.page.ts    
+│   ├── TransferFund.page.ts        
+│   └── BillPaymentPage.page.ts      
 │
 ├── Utils/
-│   ├── BankDetails.ts               # Utility to store/retrieve usernames and account numbers
-│   └── TestData.json                # Static test data used across tests
+│   ├── BankDetails.ts               
+│   └── TestData.json             
 │
-├── username-data.json               # Stores dynamically registered usernames (if applicable)
-├── account-data.json                # Stores dynamically created account numbers (if applicable)
-├── playwright.config.ts             # Playwright configuration file
-└── README.md                        # Project documentation
+├── username-data.json               
+├── account-data.json                
+├── playwright.config.ts            
+└── README.md                        
 
 
-
-
----
 
 ## Features Covered
 
